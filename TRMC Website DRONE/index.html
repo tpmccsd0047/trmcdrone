@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TRMC Real Estate LLC | Drone Photography | Charlotte, NC</title>
+  <meta name="description" content="TRMC Real Estate LLC provides FAA Part 107 licensed drone photography and video for real estate in Charlotte, Cabarrus County, and surrounding areas." />
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --card:#121826;
+      --text:#eaf0ff;
+      --muted:#b9c4dd;
+      --accent:#4ea1ff;
+      --border:rgba(255,255,255,.10);
+      --shadow: 0 16px 40px rgba(0,0,0,.45);
+      --radius:18px;
+      --max:1100px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      color:var(--text);
+      background: var(--bg);
+      line-height:1.5;
+    }
+    a{color:inherit; text-decoration:none}
+    header{
+      position:sticky; top:0;
+      background: rgba(11,15,20,.85);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:14px 18px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+    }
+    .brand{font-weight:700;}
+    .btn{
+      padding:10px 14px;
+      border-radius:12px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.06);
+      font-weight:700;
+      font-size:14px;
+    }
+    .btn.primary{
+      background:#4ea1ff;
+      color:#07111e;
+      border:none;
+    }
+    main{max-width:var(--max); margin:0 auto; padding:34px 18px 80px}
+    section{margin-top:30px}
+    h1{font-size:40px; margin-bottom:10px}
+    h2{margin-bottom:10px}
+    .panel{
+      border:1px solid var(--border);
+      border-radius: var(--radius);
+      padding:20px;
+      background: rgba(255,255,255,.04);
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+      gap:16px;
+    }
+    input, textarea{
+      width:100%;
+      padding:12px;
+      border-radius:12px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.04);
+      color:white;
+      margin-bottom:10px;
+    }
+    footer{
+      margin-top:40px;
+      border-top:1px solid var(--border);
+      padding-top:20px;
+      font-size:14px;
+      color:var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">TRMC Real Estate LLC</div>
+    <a class="btn primary" href="#contact">Get a Quote</a>
+  </div>
+</header>
+
+<main>
+
+  <section>
+    <h1>Drone Photography for Real Estate</h1>
+    <p>
+      High-resolution aerial photos and cinematic video that help listings stand out.
+      Serving Charlotte, Cabarrus County, and surrounding areas.
+    </p>
+    <p><strong>FAA Part 107 Licensed Commercial Drone Operator</strong></p>
+<img src="images/5.png" alt="Midland NC drone photo" style="width:100%; border-radius:18px; margin-top:20px;">
+
+  </section>
+
+  <section>
+    <h2>Services</h2>
+    <div class="grid">
+      <div class="panel">
+        <h3>Aerial Photography</h3>
+        <p>MLS-ready exterior and neighborhood context shots.</p>
+      </div>
+      <div class="panel">
+        <h3>Aerial Video</h3>
+        <p>Smooth cinematic flyovers ideal for marketing and social media.</p>
+      </div>
+      <div class="panel">
+        <h3>Construction Progress</h3>
+        <p>Recurring flights for documentation and development updates.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Service Areas</h2>
+    <div class="panel">
+      <p><strong>Charlotte Region:</strong> Charlotte, Matthews, Mint Hill, Pineville, Huntersville</p>
+      <p><strong>Cabarrus County:</strong> Concord, Kannapolis, Harrisburg, Mt. Pleasant, Midland</p>
+      <p>Additional nearby areas available upon request.</p>
+    </div>
+  </section>
+
+<section>
+  <h2>Recent Work</h2>
+
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:16px;">
+
+    <img src="images/1.jpg" style="width:100%; border-radius:12px;">
+    <img src="images/2.png" style="width:100%; border-radius:12px;">
+    <img src="images/3.png" style="width:100%; border-radius:12px;">
+    <img src="images/4.png" style="width:100%; border-radius:12px;">
+    <img src="images/5.png" style="width:100%; border-radius:12px;">
+
+
+  </div>
+</section>
+
+  <section id="contact">
+    <h2>Contact / Request a Quote</h2>
+    <div class="panel">
+      <p>Email or call directly, or use the form below.</p>
+
+      <p><strong>Email:</strong> 
+        <a href="mailto:travis@ncnextkey.com">travis@ncnextkey.com</a>
+      </p>
+
+      <p><strong>Phone:</strong> 
+        <a href="tel:17047837109">704-783-7109</a>
+      </p>
+
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Property Address" required>
+        <textarea placeholder="What services do you need?"></textarea>
+        <button class="btn primary" type="submit">Send Request</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="year"></span> TRMC Real Estate LLC | FAA Part 107 Licensed | Charlotte & Cabarrus County, NC
+  </footer>
+
+</main>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
